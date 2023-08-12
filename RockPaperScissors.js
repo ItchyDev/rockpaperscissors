@@ -20,10 +20,12 @@ if(computerChoice === 1){
 }
 
 
+
 function playRound(){
     //gets player option. 
-    playerOption = prompt("Choose rock, paper or scissors. If not spelled correctly the program will not reconize it and the round will repeat").toLowerCase;
-
+    playerOption = prompt("Choose rock, paper or scissors. If not spelled correctly the program will not reconize it and the round will repeat");
+    playerOption = playerOption.toLowerCase();
+console.log(playerOption)
     
 //gets computers answer
     computerChoice = Math.floor(Math.random() * options.length) + 1;
