@@ -3,15 +3,18 @@
     justify-content: center;
     align-items: center;
 }
-.text{
+
+.button{
     display: flex;
     justify-content: center;
+    border-radius: 5px;
 }
-.image{
+.button button{
+    border-radius: 5px;
+    background-color: black;
+    color: green;
+}
+.computer{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.image img{
-    max-width: 50vh;
 }
