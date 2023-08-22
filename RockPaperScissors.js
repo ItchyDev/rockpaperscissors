@@ -83,6 +83,18 @@ console.log(`The computer has chosen ${computerChoice}`)
     console.log(loss+ " losses")
     document.getElementById("score").textContent = "The score is " + win +" wins, "+ loss +" losses and " + draws + " draws";
     document.getElementById("computer").textContent = "The AI chose "+computerChoice + " and you chose " + playerOption;
+    if(win === 5){
+        document.getElementById("score").textContent = "You WIN, you have "+ win + " wins "+ "and "+loss+" losses resetting the score!";
+        win = 0
+        loss = 0
+        draws = 0
+    }else if(loss === 5){
+        document.getElementById("score").textContent = "You LOSE, you have "+ win + " wins "+ "and "+loss+" losses resetting the score!";
+        win = 0
+        loss = 0
+        draws = 0
+    }
+    
 
 }
 
