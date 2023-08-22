@@ -1,2 +1,2 @@
 # rockpaperscissors
-Basic game of rock paper scissors, played from the console until future updates. (made to learn js)
+Basic game of rock paper scissors, played using buttons with some basic DOM manipulation. (made to learn js)
