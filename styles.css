@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(50, 194, 52);
+    outline: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: lightgray;
 }
 
 .button{
@@ -11,10 +15,28 @@
 }
 .button button{
     border-radius: 5px;
-    background-color: black;
+    background-color: rgb(52, 42, 42);
     color: green;
 }
 .computer{
     display: flex;
     justify-content: center;
+    color: white;
+}
+body{
+    background-color: black;
+}
+.vs-screen{
+    display: flex;
+}
+.vs-screen span{
+    display: flex;
+    color: black;
+    border: black solid 25px;
+}
+.playerrock,  .playerscissors, .playerpaper{
+    display: none;
+}
+.computerrock,  .computerpaper, .computerscissors , .vsimg {
+    display: none;
 }

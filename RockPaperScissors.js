@@ -14,17 +14,16 @@ document.getElementById("score").textContent = "The score is " + win +" wins, "+
 let computerChoice = Math.floor(Math.random() * options.length) + 1;
 
 
-
-//compairs that number and assigns it a choice 
-if(computerChoice === 1){
-    computerChoice = "rock"
-}else if(computerChoice === 2){
-    computerChoice = "scissors"
-}else if(computerChoice === 3){
-    computerChoice = "paper"
-}
-
-
+//player images
+const playerrock = document.querySelector(".playerrock")
+const playerpaper = document.querySelector(".playerscissors")
+const playerscissors = document.querySelector(".playerpaper")
+//computer images
+const computerrock = document.querySelector(".computerrock")
+const computerpaper = document.querySelector(".computerpaper")
+const computerscissors = document.querySelector(".computerscissors")
+//vs screen 
+const vs = document.querySelector(".vsimg")
 
 function playRound(playerOption){
     //interprets player option into a string
@@ -47,6 +46,35 @@ if(computerChoice === 1){
     computerChoice = "paper"
 }
 console.log(`The computer has chosen ${computerChoice}`)
+
+//reset images 
+playerrock.style.display = "none"
+playerpaper.style.display = "none"
+playerscissors.style.display = "none"
+
+computerrock.style.display = "none"
+computerpaper.style.display = "none"
+computerscissors.style.display = "none"
+
+vs.style.display = "flex"
+
+//takes the 2 imputs and sets 2 images to be visible 
+if(playerOption === "rock"){
+    playerrock.style.display = "flex"
+}else if(playerOption === "paper"){
+playerpaper.style.display = "flex"
+}else if(playerOption === "scissors"){
+    playerscissors.style.display = "flex"
+}
+
+if(computerChoice === "rock"){
+    computerrock.style.display = "flex"
+}else if(computerChoice === "paper"){
+    computerpaper.style.display = "flex"
+}else if(computerChoice === "scissors"){
+    computerscissors.style.display = "flex"
+}
+
 
 
 //compairs 2 answers to find the winner
