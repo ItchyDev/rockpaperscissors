@@ -16,8 +16,8 @@ let computerChoice = Math.floor(Math.random() * options.length) + 1;
 
 //player images
 const playerrock = document.querySelector(".playerrock")
-const playerpaper = document.querySelector(".playerscissors")
-const playerscissors = document.querySelector(".playerpaper")
+const playerpaper = document.querySelector(".playerpaper")
+const playerscissors = document.querySelector(".playerscissors")
 //computer images
 const computerrock = document.querySelector(".computerrock")
 const computerpaper = document.querySelector(".computerpaper")
@@ -127,15 +127,3 @@ if(computerChoice === "rock"){
 }
 
 
-
-/*
-while(win < 5 && loss < 5){
-    playRound();
-}
-
-if(win === 5){
-    console.log("You have won!")
-}else if(loss === 5){
-    console.log("You have lost!")
-}
-*/
