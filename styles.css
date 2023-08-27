@@ -40,3 +40,29 @@ body{
 .computerrock,  .computerpaper, .computerscissors , .vsimg {
     display: none;
 }
+.victory-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.victory-screen button{
+    border-radius: 5px;
+    background-color: black;
+    color: green;
+}
+.youwin{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.defeat-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.defeat-screen button{
+    border-radius: 5px;
+    background-color: black;
+    color: green;
+}

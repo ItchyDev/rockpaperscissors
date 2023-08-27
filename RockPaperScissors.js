@@ -116,11 +116,13 @@ if(computerChoice === "rock"){
         win = 0
         loss = 0
         draws = 0
+        window.location.href = "./victory.html";
     }else if(loss === 5){
         document.getElementById("score").textContent = "You LOSE, you have "+ win + " wins "+ "and "+loss+" losses resetting the score!";
         win = 0
         loss = 0
         draws = 0
+        window.location.href = "./defeat.html";
     }
     
 
